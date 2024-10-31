@@ -16,8 +16,8 @@ end_date = st.sidebar.date_input("Select End Date", value=pd.to_datetime("2024-0
 interval = st.sidebar.selectbox("Select Grouping Interval", ("Daily", "Weekly", "Monthly"))
 
 
-filtered_df = merged_df[(merged_df['Date'] >= pd.to_datetime(start_date)) & 
-                        (merged_df['Date'] <= pd.to_datetime(end_date))]
+filtered_df = merged_df[(merged_df['Date'] >= pd.to_datetime(start_date).date()) &
+                        (merged_df['Date'] <= pd.to_datetime(end_date).date())]
 
 
 grouped_df = group_data(filtered_df, interval)
