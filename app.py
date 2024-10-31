@@ -22,6 +22,9 @@ filtered_df = merged_df[(merged_df['Date'] >= pd.to_datetime(start_date).date())
 
 grouped_df = group_data(filtered_df, interval)
 
+if interval == "Monthly":
+    grouped_df['Month'] = grouped_df['Month'].dt.to_timestamp()
+
 
 st.header(f"{interval} Summary from {start_date} to {end_date}")
 st.write(grouped_df)
