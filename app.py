@@ -5,8 +5,8 @@ from utils.data_processing import group_data
 from utils.visualizations import plot_metrics
 
 
-file1_path = 'data/sahkon-hinta-010121-240924.csv'
-file2_path = 'data/Electricity_20-09-2024.csv'
+file1_path = 'https://raw.githubusercontent.com/omarelfounti/energy-analysis-data/refs/heads/main/sahkon-hinta-010121-240924.csv'
+file2_path = 'https://raw.githubusercontent.com/omarelfounti/energy-analysis-data/refs/heads/main/Electricity_20-09-2024.csv'
 merged_df = load_data(file1_path, file2_path)
 
 
