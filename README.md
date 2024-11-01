@@ -15,8 +15,7 @@ Installation
 Clone the repository:
 git clone https://github.com/omarelfounti/Energy-Analysis-Project.git
 
-Navigate to the project folder:
-cd energy_analysis_project
+Navigate to the project: https://omarelfounti-energy-analysis-project-app-x7vcx2.streamlit.app/
 
 Make sure you have Python and pip installed. Then, install the necessary packages:
 
